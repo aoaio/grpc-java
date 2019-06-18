@@ -4,9 +4,9 @@ grpc-java
 develop grpc client by using java
 
 
-**Compile .proto file**
+**compile .proto file**
 
-我们需要从 .proto 的服务定义中生成 gRPC 客户端和服务器端的接口。我们通过 protocol buffer 的编译器 protoc 以及一个特殊的 gRPC Java 插件来完成。编译器protoc 与 gRPC Java 插件下载的地址己经写在plugins.txt文件中。
+We need to generate the gRPC client and server interface from the .proto service definition. We do this through the protocol buffer's compiler protoc and a special gRPC Java plugin.
 
 
 
@@ -23,9 +23,16 @@ execute *.sh文件
 
 Generate AccountGrpc.java and AccountProto.java after success
 
+* Windows
 
-**New java gRPC client：AccountClient.java**
+The address downloaded by the compiler protoc and the gRPC Java plugin has been written in the plugins.txt file，you can write a batch after successful download.
 
+
+
+
+**new java gRPC client**
+
+for example:AccountClient.java
 ```Java
 private final ManagedChannel channel;
 private AccountGrpc.AccountBlockingStub blockingStub;
