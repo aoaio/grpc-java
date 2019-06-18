@@ -32,7 +32,7 @@ The address downloaded by the compiler protoc and the gRPC Java plugin has been 
 
 **New grpc client for java**
 
-for example:AccountClient.java
+for example：AccountClient.java
 ```Java
 private final ManagedChannel channel;
 private AccountGrpc.AccountBlockingStub blockingStub;
