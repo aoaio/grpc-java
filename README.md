@@ -10,6 +10,10 @@ ubuntu系统
 sudo apt-get install libprotoc-dev
 
 执行 *.sh文件
+xx@xx-ubuntu:~/workspace/intellij/grpc-java/src/main/proto$ ./blockchain/blockchain.sh
+成功后生成BlockChainGrpc.java 与 BlockChainGrpc.java 
 
+2.编写Java gRPC client：BlockChainClient.java
+    
       
     
