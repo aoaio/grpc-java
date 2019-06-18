@@ -11,13 +11,13 @@ develop grpc client by using java
 
 * ubuntu系统
 
->>>>安装protoc编译器
->>>>
->>>>sudo apt-get install libprotoc-dev
+安装protoc编译器
 
-###### >>>>执行 *.sh文件
->>>>
->>>>xx@xx-ubuntu:~/workspace/intellij/grpc-java/src/main/proto$ ./account/account.sh
+sudo apt-get install libprotoc-dev
+
+执行 *.sh文件
+----
+xx@xx-ubuntu:~/workspace/intellij/grpc-java/src/main/proto$ ./account/account.sh
 
 成功后生成AccountGrpc.java 与 AccountProto.java 
 
