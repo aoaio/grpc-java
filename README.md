@@ -4,27 +4,27 @@ grpc-java
 develop grpc client by using java
 
 
-**编译.proto文件**
+**Compile .proto file**
 
 我们需要从 .proto 的服务定义中生成 gRPC 客户端和服务器端的接口。我们通过 protocol buffer 的编译器 protoc 以及一个特殊的 gRPC Java 插件来完成。编译器protoc 与 gRPC Java 插件下载的地址己经写在plugins.txt文件中。
 
 
 
-* ubuntu系统
+* Ubuntu 18.04.2 LTS
 
-安装protoc编译器
+install protoc compiler
 
-sudo apt-get install libprotoc-dev
+    sudo apt-get install libprotoc-dev
 
-执行 *.sh文件
+execute *.sh文件
 
     xx@xx-ubuntu:~/workspace/intellij/grpc-java/src/main/proto$ ./account/account.sh
 
 
-成功后生成AccountGrpc.java 与 AccountProto.java 
+Generate AccountGrpc.java and AccountProto.java after success
 
 
-**编写Java gRPC client：AccountClient.java**
+**New java gRPC client：AccountClient.java**
 
 ```Java
 private final ManagedChannel channel;
