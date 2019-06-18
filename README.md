@@ -14,7 +14,7 @@ xx@xx-ubuntu:~/workspace/intellij/grpc-java/src/main/proto$ ./account/account.sh
 成功后生成AccountGrpc.java 与 AccountProto.java 
 
 **编写Java gRPC client：AccountClient.java**
-----
+```Java
 private final ManagedChannel channel;
 private AccountGrpc.AccountBlockingStub blockingStub;
 
@@ -39,3 +39,4 @@ public List<ByteString> accounts() {
     }
     return accounts;
 }
+```
