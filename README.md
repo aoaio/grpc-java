@@ -4,7 +4,7 @@ grpc-java
 develop grpc client by using java
 
 
-**compile .proto file**
+**Compile .proto file**
 
 We need to generate the gRPC client and server interface from the .proto service definition. We do this through the protocol buffer's compiler protoc and a special gRPC Java plugin.
 
@@ -30,7 +30,7 @@ The address downloaded by the compiler protoc and the gRPC Java plugin has been 
 
 
 
-**new java gRPC client**
+**New grpc client for java**
 
 for example:AccountClient.java
 ```Java
